@@ -37,6 +37,16 @@ Building a boilerplate config
     ``` 
 16) webpack folder - **webpack.config.js** and populate it with base config
 17) adding npm scripts in **package.json**
+18) adding css loaders for webpack 
+    ``` 
+    npm install -D css-loader style-loader
+    ``` 
+    and then we add loaders into **webpack.config**
+19) adding images, svg declarations, **declarations.d.ts**
+then in **webpack.config** we need to specify loaders for ico,gif, png, jpg, etc from 
+**'asset/resource'** webpack5
+20) adding svg and fonts in **declarations.d.ts** and then in **webpack.config** we specify loaders
+from **'asset/inline'** webpack5
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
